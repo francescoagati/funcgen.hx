@@ -4,6 +4,10 @@ Functions shortcut for haxe. A code variation of [cleversort](https://github.com
 
 
 ```
+package funcgen;
+import funcgen.Functions.*;
+using Lambda;
+
 var list = ['a','b','c'];
 list.map(fn(_.toUpperCase())).filter(fn(_.length == 1));
 
