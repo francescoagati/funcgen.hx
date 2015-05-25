@@ -11,14 +11,14 @@ trace(fnTest(1,2));
 code generated
 
 ```
-	var list = ["a","b","c"];
-	list.map(function(el) {
-		return el.toUpperCase();
-	}).filter(function(el3) {
-		return el3.length == 1;
-	});
-	var fnTest = function(el1,el2) {
-		return el1 + el2;
-	};
-	console.log(fnTest(1,2));
+var list = ["a","b","c"];
+list.map(function(el) {
+	return el.toUpperCase();
+}).filter(function(el3) {
+	return el3.length == 1;
+});
+var fnTest = function(el1,el2) {
+	return el1 + el2;
+};
+console.log(fnTest(1,2));
 ```
