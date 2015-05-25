@@ -1,5 +1,8 @@
 # funcgen.hx
 
+Inspired by [cleversort](https://github.com/jasononeil/cleversort) and scala shortcuts a function generator for getter paths short expressions.
+
+
 ```
 var list = ['a','b','c'];
 list.map(fn(_.toUpperCase())).filter(fn(_.length == 1));
