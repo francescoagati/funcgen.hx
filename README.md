@@ -30,6 +30,7 @@ var fn11 = inc(x);
 var fn12 = dec(x);
 var fn13 = not(x);
 var fn14 = neg(x);
+var fn15 = exists(x);
 
 ```
 
@@ -86,6 +87,9 @@ var fn13 = function(el4) {
 };
 var fn14 = function(el5) {
 	return -el5;
+};
+var fn15 = function(el6) {
+	return el6 != null;
 };
 
 ```

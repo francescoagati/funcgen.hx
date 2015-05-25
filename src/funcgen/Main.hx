@@ -1,6 +1,7 @@
 package funcgen;
 import funcgen.Functions.*;
 import funcgen.Operators.*;
+import funcgen.Existentials.*;
 
 using Lambda;
 
@@ -29,6 +30,6 @@ class Main {
     var fn12 = dec(x);
     var fn13 = not(x);
     var fn14 = neg(x);
-
+    var fn15 = exists(x);
   }
 }

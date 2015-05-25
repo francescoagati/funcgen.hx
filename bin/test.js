@@ -1,12 +1,13 @@
 (function (console) { "use strict";
+var funcgen_Existentials = function() { };
 var funcgen_Functions = function() { };
 var funcgen_Main = function() { };
 funcgen_Main.main = function() {
 	var list = ["a","b","c"];
-	list.map(function(el6) {
-		return el6.toUpperCase();
-	}).filter(function(el7) {
-		return el7.length == 1;
+	list.map(function(el7) {
+		return el7.toUpperCase();
+	}).filter(function(el8) {
+		return el8.length == 1;
 	});
 	var fnTest = function(el1,el2) {
 		return el1 + el2;
@@ -52,6 +53,9 @@ funcgen_Main.main = function() {
 	};
 	var fn14 = function(el5) {
 		return -el5;
+	};
+	var fn15 = function(el6) {
+		return el6 != null;
 	};
 };
 var funcgen_Operators = function() { };
