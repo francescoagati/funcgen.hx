@@ -1,6 +1,6 @@
 # funcgen.hx
 
-variation of [cleversort](https://github.com/jasononeil/cleversort) code, similar to scala shortcuts for function generators of getter paths and short expressions.
+Functions shortcut for haxe. A code variation of [cleversort](https://github.com/jasononeil/cleversort).
 
 
 ```
