@@ -1,0 +1,14 @@
+{
+  "name": "func-gen",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["function generator","macro","metaprogramming"],
+  "description": "function generator",
+  "contributors": ["francescoagati"],
+  "releasenote": "first release",
+  "version": "0.1.0",
+  "url": "https://github.com/francescoagati/func-gen.hx",
+  "dependencies": {
+    "tink_macro": ""
+  }
+}
