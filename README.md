@@ -5,6 +5,9 @@ Functions shortcut for haxe. A code variation of [cleversort](https://github.com
 
 ```
 import funcgen.Functions.*;
+import funcgen.Operators.*;
+import funcgen.Existentials.*;
+
 using Lambda;
 
 
