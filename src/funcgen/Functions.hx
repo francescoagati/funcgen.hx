@@ -14,7 +14,7 @@ class Functions {
   }
 
 
-  macro public static function fn0(filter:Expr) return macro function(el) { return $filter;  };
+  macro public static function fn0(filter:Expr) return macro function() { return $filter;  };
   
  
   
