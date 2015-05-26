@@ -1,5 +1,6 @@
 package funcgen;
 
+
 #if macro
   import haxe.macro.Context;
   import haxe.macro.Expr;
@@ -15,6 +16,16 @@ class Timer {
         next();
       });
     };
+  }
+
+  @:extern public static inline function wait(n:Int) {
+    return function(next:Void->Void) {
+      #if js
+        untyped setTimeout(next,n);
+      #elseif !macro
+        haxe.Timer.delay(next,n);
+      #end
+    }
   }
 
 }

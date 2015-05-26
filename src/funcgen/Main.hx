@@ -14,6 +14,8 @@ class Main {
       trace('hello');
     });
 
+    var wt = wait(100);
+
     var list = ['a','b','c'];
     list.map(fn(_.toUpperCase())).filter(fn(_.length == 1));
 

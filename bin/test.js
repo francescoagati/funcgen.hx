@@ -12,6 +12,9 @@ funcgen_Main.main = function() {
 			next();
 		});
 	};
+	var wt = function(next1) {
+		setTimeout(next1,100);
+	};
 	var list = ["a","b","c"];
 	list.map(function(el8) {
 		return el8.toUpperCase();
