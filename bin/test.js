@@ -3,11 +3,20 @@ var funcgen_Existentials = function() { };
 var funcgen_Functions = function() { };
 var funcgen_Main = function() { };
 funcgen_Main.main = function() {
+	window.requestAnimationFrame(function(el7) {
+		return { };
+	});
+	var frame = function(next) {
+		window.requestAnimationFrame(function(n) {
+			console.log("hello");
+			next();
+		});
+	};
 	var list = ["a","b","c"];
-	list.map(function(el7) {
-		return el7.toUpperCase();
-	}).filter(function(el8) {
-		return el8.length == 1;
+	list.map(function(el8) {
+		return el8.toUpperCase();
+	}).filter(function(el9) {
+		return el9.length == 1;
 	});
 	var fnTest = function(el1,el2) {
 		return el1 + el2;
@@ -59,6 +68,7 @@ funcgen_Main.main = function() {
 	};
 };
 var funcgen_Operators = function() { };
+var funcgen_Timer = function() { };
 if(Array.prototype.map == null) Array.prototype.map = function(f) {
 	var a = [];
 	var _g1 = 0;

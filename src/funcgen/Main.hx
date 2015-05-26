@@ -2,11 +2,17 @@ package funcgen;
 import funcgen.Functions.*;
 import funcgen.Operators.*;
 import funcgen.Existentials.*;
-
+import funcgen.Timer.*;
 using Lambda;
 
 class Main {
   public static function main() {
+
+    js.Browser.window.requestAnimationFrame(fn({}));
+
+    var frame = raf({
+      trace('hello');
+    });
 
     var list = ['a','b','c'];
     list.map(fn(_.toUpperCase())).filter(fn(_.length == 1));
