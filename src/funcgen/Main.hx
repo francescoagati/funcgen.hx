@@ -5,6 +5,7 @@ import funcgen.Existentials.*;
 import funcgen.Timer.*;
 import funcgen.Forms.*;
 using Lambda;
+using StringTools;
 
 class Main {
   public static function main() {
@@ -24,7 +25,12 @@ class Main {
     not(x==1);
     when(and(x==1,y==2),trace(true));
 
-
+    with("1,2,3,4,5",{
+      _.replace(",",";");
+      _.length;
+      _.toLowerCase();
+      trace(_.split(","));
+    });
 
     js.Browser.window.requestAnimationFrame(fn({}));
 

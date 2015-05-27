@@ -28,5 +28,10 @@ class Forms {
     return macro !($cond);
   }
 
+  public macro static function with(context:Expr,body:Expr) {
+    var new_body = body.substitute({ "_": macro $context });
+    return macro $new_body;
+  }
+
 
 }

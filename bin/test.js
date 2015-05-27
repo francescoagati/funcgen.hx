@@ -1,4 +1,8 @@
 (function (console) { "use strict";
+var StringTools = function() { };
+StringTools.replace = function(s,sub,by) {
+	return s.split(sub).join(by);
+};
 var funcgen_Existentials = function() { };
 var funcgen_Forms = function() { };
 var funcgen_Functions = function() { };
@@ -13,6 +17,10 @@ funcgen_Main.main = function() {
 	x == 1 || y == 2;
 	!(x == 1);
 	if(x == 1 && y == 2) console.log(true);
+	StringTools.replace("1,2,3,4,5",",",";");
+	"1,2,3,4,5".length;
+	"1,2,3,4,5".toLowerCase();
+	console.log("1,2,3,4,5".split(","));
 	window.requestAnimationFrame(function(el6) {
 		return { };
 	});
