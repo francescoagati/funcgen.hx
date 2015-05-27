@@ -8,6 +8,6 @@ class Async {
       fn();
       next();
     });
-  }  
+  }
 
 }

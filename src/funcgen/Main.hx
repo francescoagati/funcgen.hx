@@ -34,7 +34,15 @@ class Main {
 
   public static function main() {
 
+    var wt = wait(100);
+    var frm = frame({
+      trace(1);
+    });
+
     async(function() {});
+
+
+
     var x=1,y=2;
 
     when(x==y,trace(1));

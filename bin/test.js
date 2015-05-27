@@ -49,6 +49,15 @@ funcgen_Main.async = function(__return) {
 	});
 };
 funcgen_Main.main = function() {
+	var wt = function(next) {
+		setTimeout(next,100);
+	};
+	var frm = function(next1) {
+		window.requestAnimationFrame(function(n) {
+			console.log(1);
+			next1();
+		});
+	};
 	funcgen_Main.async(function() {
 	});
 	var x = 1;
