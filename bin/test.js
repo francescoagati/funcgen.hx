@@ -128,9 +128,68 @@ funcgen_Main.main = function() {
 	var fn15 = function(el5) {
 		return el5 != null;
 	};
+	setTimeout(function() {
+		console.log(3333);
+	},100000);
 };
 var funcgen_Operators = function() { };
 var funcgen_Timer = function() { };
+var funcgen_TimeFunctions = function() { };
+funcgen_TimeFunctions.to_ms = function(n) {
+	return n * 1000;
+};
+funcgen_TimeFunctions.to_seconds = function(n) {
+	return n * 60;
+};
+var funcgen_TimerTools = function() { };
+funcgen_TimerTools.after_seconds = function(n,fn) {
+	haxe_Timer.delay(fn,n * 1000);
+};
+funcgen_TimerTools.after_ms = function(n,fn) {
+	haxe_Timer.delay(fn,n);
+};
+funcgen_TimerTools.after_minutes = function(n,fn) {
+	haxe_Timer.delay(fn,n * 60 * 1000);
+};
+var funcgen_Every = function(n) {
+	this.t = n;
+};
+var funcgen_TimerToolsLight = function() { };
+funcgen_TimerToolsLight.after_seconds = function(n,fn) {
+	return setTimeout(fn,n * 1000);
+};
+funcgen_TimerToolsLight.after_ms = function(n,fn) {
+	return setTimeout(fn,n);
+};
+funcgen_TimerToolsLight.after_minutes = function(n,fn) {
+	return setTimeout(fn,n * 60 * 1000);
+};
+var funcgen_EveryLight = function(n) {
+	this.t = n;
+};
+var haxe_Timer = function(time_ms) {
+	var me = this;
+	this.id = setInterval(function() {
+		me.run();
+	},time_ms);
+};
+haxe_Timer.delay = function(f,time_ms) {
+	var t = new haxe_Timer(time_ms);
+	t.run = function() {
+		t.stop();
+		f();
+	};
+	return t;
+};
+haxe_Timer.prototype = {
+	stop: function() {
+		if(this.id == null) return;
+		clearInterval(this.id);
+		this.id = null;
+	}
+	,run: function() {
+	}
+};
 if(Array.prototype.map == null) Array.prototype.map = function(f) {
 	var a = [];
 	var _g1 = 0;

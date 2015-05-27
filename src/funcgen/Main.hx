@@ -5,6 +5,7 @@ import funcgen.Existentials.*;
 import funcgen.Timer.*;
 import funcgen.Forms.*;
 import funcgen.Async.*;
+using funcgen.TimerTools;
 using Lambda;
 using StringTools;
 
@@ -91,5 +92,10 @@ class Main {
     var fn13 = not(x);
     var fn14 = neg(x);
     var fn15 = exists(x);
+
+    100.after_seconds(function() {
+      trace(3333);
+    });
+
   }
 }
