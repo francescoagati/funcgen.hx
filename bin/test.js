@@ -3,11 +3,54 @@ var StringTools = function() { };
 StringTools.replace = function(s,sub,by) {
 	return s.split(sub).join(by);
 };
+var com_dongxiguo_continuation_Continuation = function() { };
+var com_dongxiguo_continuation_ContinuationDetail = function() { };
+var funcgen__$Async_Async_$Impl_$ = function() { };
+var funcgen_Async = function() { };
 var funcgen_Existentials = function() { };
 var funcgen_Forms = function() { };
 var funcgen_Functions = function() { };
 var funcgen_Main = function() { };
+funcgen_Main.async = function(__return) {
+	var fn = function() {
+		console.log("trace 1");
+		return;
+	};
+	var next2 = function() {
+		setTimeout(function() {
+			var fn1 = function() {
+				console.log("trace 2");
+				return;
+			};
+			var next1 = function() {
+				setTimeout(function() {
+					var fn2 = function() {
+						console.log("trace 3");
+						return;
+					};
+					var next = function() {
+						__return();
+					};
+					window.requestAnimationFrame(function(b) {
+						fn2();
+						next();
+					});
+				},100);
+			};
+			window.requestAnimationFrame(function(b1) {
+				fn1();
+				next1();
+			});
+		},100);
+	};
+	window.requestAnimationFrame(function(b2) {
+		fn();
+		next2();
+	});
+};
 funcgen_Main.main = function() {
+	funcgen_Main.async(function() {
+	});
 	var x = 1;
 	var y = 2;
 	if(x == y) console.log(1);
@@ -24,15 +67,6 @@ funcgen_Main.main = function() {
 	window.requestAnimationFrame(function(el6) {
 		return { };
 	});
-	var frame = function(next) {
-		window.requestAnimationFrame(function(n) {
-			console.log("hello");
-			next();
-		});
-	};
-	var wt = function(next1) {
-		setTimeout(next1,100);
-	};
 	var list = ["a","b","c"];
 	list.map(function(el7) {
 		return el7.toUpperCase();

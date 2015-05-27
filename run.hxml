@@ -1,4 +1,4 @@
 -js bin/test.js
 -main funcgen.Main
 -cp src
--lib tink_macro
+-lib tink_macro continuation

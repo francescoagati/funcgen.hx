@@ -4,12 +4,37 @@ import funcgen.Operators.*;
 import funcgen.Existentials.*;
 import funcgen.Timer.*;
 import funcgen.Forms.*;
+import funcgen.Async.*;
 using Lambda;
 using StringTools;
 
+@:build(com.dongxiguo.continuation.Continuation.cpsByMeta(":async"))
 class Main {
+
+  @:async public static function async() {
+
+    @await raf(fn0({
+      trace("trace 1");
+    }));
+
+    @await sleep(100);
+
+    @await raf(fn0({
+      trace("trace 2");
+    }));
+
+    @await sleep(100);
+
+    @await raf(fn0({
+      trace("trace 3");
+    }));
+
+  }
+
+
   public static function main() {
 
+    async(function() {});
     var x=1,y=2;
 
     when(x==y,trace(1));
@@ -34,11 +59,6 @@ class Main {
 
     js.Browser.window.requestAnimationFrame(fn({}));
 
-    var frame = raf({
-      trace('hello');
-    });
-
-    var wt = wait(100);
 
     var list = ['a','b','c'];
     list.map(fn(_.toUpperCase())).filter(fn(_.length == 1));

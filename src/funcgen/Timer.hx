@@ -9,7 +9,7 @@ package funcgen;
 
 class Timer {
 
-  macro public static function raf(exp:Expr) {
+  macro public static function frame(exp:Expr) {
     return macro function(next:Void->Void) {
       js.Browser.window.requestAnimationFrame(function(n:Float) {
         $exp;
