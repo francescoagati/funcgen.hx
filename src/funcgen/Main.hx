@@ -3,10 +3,28 @@ import funcgen.Functions.*;
 import funcgen.Operators.*;
 import funcgen.Existentials.*;
 import funcgen.Timer.*;
+import funcgen.Forms.*;
 using Lambda;
 
 class Main {
   public static function main() {
+
+    var x=1,y=2;
+
+    when(x==y,trace(1));
+
+    when(x==y,{
+      trace(2);
+    });
+
+    unless(x==y,trace(1));
+
+    and(x==1,y==2);
+    or(x==1,y==2);
+    not(x==1);
+    when(and(x==1,y==2),trace(true));
+
+
 
     js.Browser.window.requestAnimationFrame(fn({}));
 

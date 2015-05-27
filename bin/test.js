@@ -1,9 +1,19 @@
 (function (console) { "use strict";
 var funcgen_Existentials = function() { };
+var funcgen_Forms = function() { };
 var funcgen_Functions = function() { };
 var funcgen_Main = function() { };
 funcgen_Main.main = function() {
-	window.requestAnimationFrame(function(el7) {
+	var x = 1;
+	var y = 2;
+	if(x == y) console.log(1);
+	if(x == y) console.log(2);
+	if(!(x == y)) console.log(1);
+	x == 1 && y == 2;
+	x == 1 || y == 2;
+	!(x == 1);
+	if(x == 1 && y == 2) console.log(true);
+	window.requestAnimationFrame(function(el6) {
 		return { };
 	});
 	var frame = function(next) {
@@ -16,17 +26,17 @@ funcgen_Main.main = function() {
 		setTimeout(next1,100);
 	};
 	var list = ["a","b","c"];
-	list.map(function(el8) {
-		return el8.toUpperCase();
-	}).filter(function(el9) {
-		return el9.length == 1;
+	list.map(function(el7) {
+		return el7.toUpperCase();
+	}).filter(function(el8) {
+		return el8.length == 1;
 	});
 	var fnTest = function(el1,el2) {
 		return el1 + el2;
 	};
 	console.log(fnTest(1,2));
-	var x = 1;
-	var y = 2;
+	var x1 = 1;
+	var y1 = 2;
 	var fn1 = function(el11,el21) {
 		return el11 == el21;
 	};
@@ -60,14 +70,12 @@ funcgen_Main.main = function() {
 	var fn12 = function(el3) {
 		return --el3;
 	};
-	var fn13 = function(el4) {
-		return !el4;
+	var fn13 = !x1;
+	var fn14 = function(el4) {
+		return -el4;
 	};
-	var fn14 = function(el5) {
-		return -el5;
-	};
-	var fn15 = function(el6) {
-		return el6 != null;
+	var fn15 = function(el5) {
+		return el5 != null;
 	};
 };
 var funcgen_Operators = function() { };
