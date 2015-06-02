@@ -9,7 +9,7 @@ class Macros {
 
   public static function replaceSymbol(e:Expr,symbol:String,withExpr:Expr) {
     return switch e {
-      case macro $i{name} if (name.startsWith("_")):
+    case macro $i{name} if (name.startsWith(symbol)):
         return withExpr;
       default: return e.map(function(e) {
         return replaceSymbol(e,symbol,withExpr);
