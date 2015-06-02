@@ -3,7 +3,6 @@ package funcgen;
 #if macro
   import haxe.macro.Context;
   import haxe.macro.Expr;
-  using tink.MacroApi;
 #end
 
 class Forms {
@@ -29,7 +28,7 @@ class Forms {
   }
 
   public macro static function with(context:Expr,body:Expr) {
-    var new_body = body.substitute({ "_": macro $context });
+    var new_body = Macros.replaceSymbol(body,"_",macro $context);
     return macro $new_body;
   }
 

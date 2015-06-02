@@ -73,60 +73,60 @@ funcgen_Main.main = function() {
 	"1,2,3,4,5".length;
 	"1,2,3,4,5".toLowerCase();
 	console.log("1,2,3,4,5".split(","));
-	window.requestAnimationFrame(function(el6) {
+	window.requestAnimationFrame(function(__tmp114) {
 		return { };
 	});
 	var list = ["a","b","c"];
-	list.map(function(el7) {
-		return el7.toUpperCase();
-	}).filter(function(el8) {
-		return el8.length == 1;
+	list.map(function(__tmp115) {
+		return __tmp115.toUpperCase();
+	}).filter(function(__tmp116) {
+		return __tmp116.length == 1;
 	});
-	var fnTest = function(el1,el2) {
-		return el1 + el2;
+	var fnTest = function(__tmp1,__tmp2) {
+		return __tmp2 + __tmp2;
 	};
 	console.log(fnTest(1,2));
 	var x1 = 1;
 	var y1 = 2;
-	var fn1 = function(el11,el21) {
-		return el11 == el21;
+	var fn1 = function(__tmp11,__tmp21) {
+		return __tmp21 == __tmp21;
 	};
-	var fn2 = function(el12,el22) {
-		return el12 < el22;
+	var fn2 = function(__tmp12,__tmp22) {
+		return __tmp22 < __tmp22;
 	};
-	var fn3 = function(el13,el23) {
-		return el13 <= el23;
+	var fn3 = function(__tmp13,__tmp23) {
+		return __tmp23 <= __tmp23;
 	};
-	var fn4 = function(el14,el24) {
-		return el14 > el24;
+	var fn4 = function(__tmp14,__tmp24) {
+		return __tmp24 > __tmp24;
 	};
-	var fn5 = function(el15,el25) {
-		return el15 >= el25;
+	var fn5 = function(__tmp15,__tmp25) {
+		return __tmp25 >= __tmp25;
 	};
-	var fn7 = function(el16,el26) {
-		return el16 + el26;
+	var fn7 = function(__tmp16,__tmp26) {
+		return __tmp26 + __tmp26;
 	};
-	var fn8 = function(el17,el27) {
-		return el17 - el27;
+	var fn8 = function(__tmp17,__tmp27) {
+		return __tmp27 - __tmp27;
 	};
-	var fn9 = function(el18,el28) {
-		return el18 * el28;
+	var fn9 = function(__tmp18,__tmp28) {
+		return __tmp28 * __tmp28;
 	};
-	var fn10 = function(el19,el29) {
-		return el19 / el29;
+	var fn10 = function(__tmp19,__tmp29) {
+		return __tmp29 / __tmp29;
 	};
-	var fn11 = function(el) {
-		return ++el;
+	var fn11 = function(__tmp110) {
+		return ++__tmp110;
 	};
-	var fn12 = function(el3) {
-		return --el3;
+	var fn12 = function(__tmp111) {
+		return --__tmp111;
 	};
 	var fn13 = !x1;
-	var fn14 = function(el4) {
-		return -el4;
+	var fn14 = function(__tmp112) {
+		return -__tmp112;
 	};
-	var fn15 = function(el5) {
-		return el5 != null;
+	var fn15 = function(__tmp113) {
+		return __tmp113 != null;
 	};
 	setTimeout(function() {
 		console.log(3333);

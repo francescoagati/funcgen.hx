@@ -4,7 +4,6 @@ package funcgen;
 #if macro
   import haxe.macro.Context;
   import haxe.macro.Expr;
-  using tink.MacroApi;
 #end
 
 class Timer {
