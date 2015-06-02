@@ -15,7 +15,7 @@ class Functions {
 
   macro public static function fn(filter:Expr) {
 
-    var new_filter = filter.map(replace1());
+    var new_filter = filter.map(replace_());
     return macro function(__tmp1) { return $new_filter;  };
   }
 

@@ -83,37 +83,37 @@ funcgen_Main.main = function() {
 		return __tmp116.length == 1;
 	});
 	var fnTest = function(__tmp1,__tmp2) {
-		return __tmp2 + __tmp2;
+		return __tmp1 + __tmp2;
 	};
 	console.log(fnTest(1,2));
 	var x1 = 1;
 	var y1 = 2;
 	var fn1 = function(__tmp11,__tmp21) {
-		return __tmp21 == __tmp21;
+		return __tmp11 == __tmp21;
 	};
 	var fn2 = function(__tmp12,__tmp22) {
-		return __tmp22 < __tmp22;
+		return __tmp12 < __tmp22;
 	};
 	var fn3 = function(__tmp13,__tmp23) {
-		return __tmp23 <= __tmp23;
+		return __tmp13 <= __tmp23;
 	};
 	var fn4 = function(__tmp14,__tmp24) {
-		return __tmp24 > __tmp24;
+		return __tmp14 > __tmp24;
 	};
 	var fn5 = function(__tmp15,__tmp25) {
-		return __tmp25 >= __tmp25;
+		return __tmp15 >= __tmp25;
 	};
 	var fn7 = function(__tmp16,__tmp26) {
-		return __tmp26 + __tmp26;
+		return __tmp16 + __tmp26;
 	};
 	var fn8 = function(__tmp17,__tmp27) {
-		return __tmp27 - __tmp27;
+		return __tmp17 - __tmp27;
 	};
 	var fn9 = function(__tmp18,__tmp28) {
-		return __tmp28 * __tmp28;
+		return __tmp18 * __tmp28;
 	};
 	var fn10 = function(__tmp19,__tmp29) {
-		return __tmp29 / __tmp29;
+		return __tmp19 / __tmp29;
 	};
 	var fn11 = function(__tmp110) {
 		return ++__tmp110;

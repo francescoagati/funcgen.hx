@@ -17,11 +17,12 @@ class Macros {
     }
   }
 
-  public static function replace1() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp1);
-  public static function replace2() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp2);
-  public static function replace3() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp3);
-  public static function replace4() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp4);
-  public static function replace5() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp5);
+  public static function replace_() return funcgen.Macros.replaceSymbol.bind(_,'_',macro __tmp1);
+  public static function replace1() return funcgen.Macros.replaceSymbol.bind(_,'_1',macro __tmp1);
+  public static function replace2() return funcgen.Macros.replaceSymbol.bind(_,'_2',macro __tmp2);
+  public static function replace3() return funcgen.Macros.replaceSymbol.bind(_,'_3',macro __tmp3);
+  public static function replace4() return funcgen.Macros.replaceSymbol.bind(_,'_4',macro __tmp4);
+  public static function replace5() return funcgen.Macros.replaceSymbol.bind(_,'_5',macro __tmp5);
 
 
 }
